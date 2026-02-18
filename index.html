@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Art Portfolio — Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="title">Your Name — Paintings</h1>
+        <nav class="nav">
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <h2>Capturing color & texture</h2>
+                <p>Small online collection of my paintings. Click any image to open the lightbox.</p>
+                <a class="btn" href="#gallery">Explore Gallery</a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Gallery</h2>
+            <div id="galleryGrid" class="gallery-grid">
+                <img src="images/art1.svg" alt="Artwork 1" class="thumb">
+                <img src="images/art2.svg" alt="Artwork 2" class="thumb">
+                <img src="images/art3.svg" alt="Artwork 3" class="thumb">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About</h2>
+            <p>Hello — I'm a painter who explores color, texture and light. This is a small online portfolio. Replace these placeholder images with your photos in the <code>images/</code> folder.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Interested in prints or commissions? Email me at <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <small>&copy; <span id="year"></span> Your Name</small>
+    </footer>
+
+    <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+        <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
+        <button id="lbPrev" class="lb-nav lb-prev" aria-label="Previous">‹</button>
+        <img id="lbImage" class="lb-image" src="" alt="" />
+        <button id="lbNext" class="lb-nav lb-next" aria-label="Next">›</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
